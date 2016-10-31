@@ -1,5 +1,5 @@
 # COM554 Assignment 1
-## Interactive Web Computing Assignment 1
+## Interactive Web Computing Assignment 1 - Vim Website
 
 Student Number: B00632267
 

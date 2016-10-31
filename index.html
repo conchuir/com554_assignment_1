@@ -11,7 +11,7 @@
         <script type="text/javascript">
             // Clears selected menu items
             function clear_selection() {
-                var list_items = document.getElementById("menu_bar").children[0].children;
+                var list_items = document.getElementsByTagName('nav')[0].children[0].children;
                 for(var i=1; i<list_items.length; i++) {
                     list_items[i].className = "";
                 }
@@ -46,7 +46,7 @@
     </head>
 
     <body>
-        <div id="menu_bar">
+        <nav>
             <ul class='tabs'>
                 <li class="logo"><img src="images/logo.svg" alt="VIM Logo"></li>
 <!--                Logo By Wikimedia User:D0ktorz (reworked in SVG) [GPL (http://www.gnu.org/licenses/gpl.html)], via Wikimedia Commons-->
@@ -55,7 +55,7 @@
                 <li data-tab="tab-3" onclick="select(this)">Quiz</li>
                 <li data-tab="tab-4" onclick="select(this)">Contact</li>
             </ul>
-        </div>
+        </nav>
 
         <div id="content">
 
@@ -112,7 +112,7 @@
             </div>
         </div>
 
-        <div id="footer">
+        <footer>
 
         </div>
     </body>
