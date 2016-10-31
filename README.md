@@ -9,10 +9,11 @@ Due Date:       Wednesday 2nd November
 
 ## Items Complete
 
-None
+* Menu bar
+* Content tabs and holders
 
 ---
 
 ## Items to Fix
 
-* Marking menu items as selected doesn't work yet
+* ~~Marking menu items as selected doesn't work yet~~

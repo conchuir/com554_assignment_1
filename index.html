@@ -13,7 +13,7 @@
             function clear_selection() {
                 var list_items = document.getElementById("menu_bar").children[0].children;
                 for(var i=1; i<list_items.length; i++) {
-                    list_items[i].children[0].className = "";
+                    list_items[i].className = "";
                 }
             }
 
@@ -23,6 +23,22 @@
                 element.className = "selected";
             }
         </script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+
+                $('ul.tabs li').click(function(){
+                    var tab_id = $(this).attr('data-tab');
+
+                    $('ul.tabs li').removeClass('current');
+                    $('.tab-content').removeClass('current');
+
+//                    $(this).addClass('selected');
+                    select(this);
+                    $("#"+tab_id).addClass('current');
+                })
+            })
+            // Adapted from https://codepen.io/cssjockey/pen/jGzuK
+        </script>
 
         <!-- Other -->
         <script src="https://use.typekit.net/tvl4lei.js"></script>
@@ -31,18 +47,69 @@
 
     <body>
         <div id="menu_bar">
-            <ul>
+            <ul class='tabs'>
                 <li class="logo"><img src="images/logo.svg" alt="VIM Logo"></li>
 <!--                Logo By Wikimedia User:D0ktorz (reworked in SVG) [GPL (http://www.gnu.org/licenses/gpl.html)], via Wikimedia Commons-->
-                <li><a id="home_link" class="selected" onclick="select(this)">Home</a></li>
-                <li><a id="news_link" onclick="select(this)">News</a></li>
-                <li><a id="quiz_link" onclick="select(this)">Quiz</a></li>
-                <li><a id="contact_link" onclick="select(this)">Contact</a></li>
+                <li data-tab="tab-1" onclick="select(this)" class="selected">Home</li>
+                <li data-tab="tab-2" onclick="select(this)">News</li>
+                <li data-tab="tab-3" onclick="select(this)">Quiz</li>
+                <li data-tab="tab-4" onclick="select(this)">Contact</li>
             </ul>
         </div>
 
         <div id="content">
 
+            <div id="tab-1" class="tab-content current">
+                <p>
+                    Lorem ipsum dolor sit amet.<br />
+                    Lorem ipsum dolor sit amet.<br />
+                    Lorem ipsum dolor sit amet.<br />
+                    Lorem ipsum dolor sit amet.<br />
+                    Lorem ipsum dolor sit amet.<br />
+                    Lorem ipsum dolor sit amet.<br />
+                    Lorem ipsum dolor sit amet.<br />
+                    Lorem ipsum dolor sit amet.1<br />
+                </p>
+            </div>
+
+            <div id="tab-2" class="tab-content">
+                <p>
+                    Lorem ipsum dolor sit amet.<br />
+                    Lorem ipsum dolor sit amet.<br />
+                    Lorem ipsum dolor sit amet.<br />
+                    Lorem ipsum dolor sit amet.<br />
+                    Lorem ipsum dolor sit amet.<br />
+                    Lorem ipsum dolor sit amet.<br />
+                    Lorem ipsum dolor sit amet.<br />
+                    Lorem ipsum dolor sit amet.2<br />
+                </p>
+            </div>
+
+            <div id="tab-3" class="tab-content">
+                <p>
+                    Lorem ipsum dolor sit amet.<br />
+                    Lorem ipsum dolor sit amet.<br />
+                    Lorem ipsum dolor sit amet.<br />
+                    Lorem ipsum dolor sit amet.<br />
+                    Lorem ipsum dolor sit amet.<br />
+                    Lorem ipsum dolor sit amet.<br />
+                    Lorem ipsum dolor sit amet.<br />
+                    Lorem ipsum dolor sit amet.3<br />
+                </p>
+            </div>
+
+            <div id="tab-4" class="tab-content">
+                <p>
+                    Lorem ipsum dolor sit amet.<br />
+                    Lorem ipsum dolor sit amet.<br />
+                    Lorem ipsum dolor sit amet.<br />
+                    Lorem ipsum dolor sit amet.<br />
+                    Lorem ipsum dolor sit amet.<br />
+                    Lorem ipsum dolor sit amet.<br />
+                    Lorem ipsum dolor sit amet.<br />
+                    Lorem ipsum dolor sit amet.4<br />
+                </p>
+            </div>
         </div>
 
         <div id="footer">
