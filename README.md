@@ -2,6 +2,7 @@
 ## Interactive Web Computing Assignment 1
 
 Student Number: B00632267
+
 Due Date:       Wednesday 2nd November
 
 ---
@@ -14,4 +15,4 @@ None
 
 ## Items to Fix
 
-None (yet)
+* Marking menu items as selected doesn't work yet
