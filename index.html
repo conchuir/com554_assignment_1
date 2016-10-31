@@ -9,6 +9,7 @@
         <!-- JS -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script type="text/javascript">
+            // Clears selected menu items
             function clear_selection() {
                 var list_items = document.getElementById("menu_bar").children[0].children;
                 for(var i=1; i<list_items.length; i++) {
@@ -16,15 +17,11 @@
                 }
             }
 
-            function select(link_id)   {
-                document.getElementById(link_id).className = "selected";
+            // Marks menu item as selected - triggered by onclcick event
+            function select(element)   {
+                clear_selection();
+                element.className = "selected";
             }
-
-//            $('#home_link, #news_link, #quiz_link, #contact_link').on('click', function ()   {
-            $('#home_link').on('click', function ()   {
-                $(this).addClass('selected');
-                console.log("clcik");
-            });
         </script>
 
         <!-- Other -->
@@ -37,14 +34,14 @@
             <ul>
                 <li class="logo"><img src="images/logo.svg" alt="VIM Logo"></li>
 <!--                Logo By Wikimedia User:D0ktorz (reworked in SVG) [GPL (http://www.gnu.org/licenses/gpl.html)], via Wikimedia Commons-->
-                <li><a id="home_link" class="selected">Home</a></li>
-                <li><a id="news_link">News</a></li>
-                <li><a id="quiz_link">Quiz</a></li>
-                <li><a id="contact_link">Contact</a></li>
+                <li><a id="home_link" class="selected" onclick="select(this)">Home</a></li>
+                <li><a id="news_link" onclick="select(this)">News</a></li>
+                <li><a id="quiz_link" onclick="select(this)">Quiz</a></li>
+                <li><a id="contact_link" onclick="select(this)">Contact</a></li>
             </ul>
         </div>
 
-        <div id="content" onclick="clear_selection()">
+        <div id="content">
 
         </div>
 
