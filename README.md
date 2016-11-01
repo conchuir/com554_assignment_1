@@ -13,6 +13,7 @@ Due Date:       Wednesday 2nd November
 * Content tabs and holders
 * Contact form
 * News Page
+* Quiz
 
 ---
 
