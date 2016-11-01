@@ -9,12 +9,12 @@ Due Date:       Wednesday 2nd November
 
 ## Items Complete
 
-* Menu bar
+* Menu bar (selectors, add/remove classes, switching tabs uses css3 fading, using HTML5 nav element, event handling)
 * Content tabs and holders
 * Contact form
-* News Page
-* Quiz
-
+* News Page (loading xml, generating table data, tooltip)
+* Quiz (form, hide/show elements, inserting into DOM)
+* Use Vim page (accordion)
 ---
 
 ## Items to Fix
