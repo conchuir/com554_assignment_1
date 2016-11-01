@@ -7,144 +7,8 @@
         <link rel="stylesheet" type="text/css" href="css/main.css">
 
         <!-- JS -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <script type="text/javascript">
-            // JS for tabs and menu bar
-            // Clears selected menu items
-            function clear_selection() {
-                var list_items = document.getElementsByTagName('nav')[0].children[0].children;
-                for(var i=1; i<list_items.length; i++) {
-                    list_items[i].className = "";
-                }
-            }
-
-            // Marks menu item as selected - triggered by onclcick event
-            function select(element)   {
-                clear_selection();
-                element.className = "selected";
-                document.title = "VIM - " + element.innerHTML;
-            }
-
-            // Adapted from https://codepen.io/cssjockey/pen/jGzuK
-            $(document).ready(function(){
-                $('ul.tabs li').click(function(){
-                    var tab_id = $(this).attr('data-tab');
-                    $('ul.tabs li').removeClass('current');
-                    $('.tab-content').removeClass('current');
-                    select(this);
-                    $("#"+tab_id).addClass('current');
-                })
-            })
-
-        </script>
-        <script type="text/javascript">
-            // Specific JS for contact form
-            // Validate data is present before sending
-            function checkSubmit()   {
-                if (document.getElementById('name').value == null || document.getElementById('name').value == "") {
-                    alert("Name field is required");
-                    return false;
-                }
-                if (document.getElementById('email').value == null || document.getElementById('email').value == "") {
-                    alert("Email field is required");
-                    return false;
-                }
-                if (document.getElementById('subject').value == null || document.getElementById('subject').value == "") {
-                    alert("Subject field is required");
-                    return false;
-                }
-                if (document.getElementById('message').value == null || document.getElementById('message').value == "") {
-                    alert("Message field is required");
-                    return false;
-                }
-                return true;
-            }
-
-            // Submit data (runs checkSubmit first)
-            function send() {
-                if (checkSubmit())  {
-                    var url = "contact.php?";
-                    url += "name=";
-                    url += document.getElementById('name').value;
-                    url += "&email=";
-                    url += document.getElementById('email').value;
-                    url += "&subject=";
-                    url += document.getElementById('subject').value;
-                    url += "&message=";
-                    url += document.getElementById('message').value;
-                    url = url.replace(/ /g, "%20");
-                    url += " #response"
-                    alert(url);
-                    $("#return").load(url);
-                }
-            }
-        </script>
-        <script type="text/javascript">
-            // JS for news feed
-            // Populate news table from RSS feed
-            $(document).ready(function(){
-                //var rss_url = "https://groups.google.com/forum/feed/vim_announce/msgs/rss.xml"
-                // Google prevent other websites from loading this data so a local copy will be used
-                var rss_url = "docs/rss.xml"
-                $.get(rss_url, function (data) {
-                    $(data).find("item").each(function () {
-                        var item = $(this);
-                        var i = 0;
-                        var table = document.getElementById("news_table");
-                        var row1 = table.insertRow(i);
-                        var cell1 = row1.insertCell(0);
-                        var row2 = table.insertRow(i+1);
-                        var cell2 = row2.insertCell(0);
-                        cell1.innerHTML = "<h3 class=\"tooltip\"><a href="+item.find("link").text()+">"+item.find("title").text()+"</a><span class=\"tooltiptext\">"+item.find("pubDate").text()+"</span></h3>";
-                        cell2.innerHTML = "<p>"+item.find("description").text()+"</p>";
-                        i += 2
-                    })
-                });
-            });
-        </script>
-        <script>
-            // JS for quiz
-            // Make divs invisible on page load
-            $(document).ready(function(){
-                $('#question_2').hide();
-                $('#question_3').hide();
-                $('#question_4').hide();
-                $('#question_5').hide();
-                $('#results').hide();
-            });
-
-            // Make divs visible
-            function show(div_id) {
-                $("#"+div_id).show();
-            }
-
-            function calculateResult() {
-                resultArr = $('form#quiz').serializeArray();
-                console.log(resultArr);
-                var result = 0;
-                for(i=0; i<resultArr.length; i++) {
-                    result += parseInt(resultArr[i].value);
-                }
-                document.getElementById('results_holder').innerHTML = "<h4>You scored "+result+" out of 5!</h4>"
-            }
-
-            // Humourous alert if certain ansers are selected
-            function stupidAnswer() {
-                alert("Haha. Good one! Try again.");
-            }
-        </script>
-        <script>
-            // JS for Accordian
-            // Adapted from https://css-tricks.com/snippets/jquery/simple-jquery-accordion/
-            $(document).ready(function($) {
-                var allPanels = $('.accordion > dd').hide();
-                $('.accordion > dt').click(function() {
-                    allPanels.slideUp();
-                    $(this).next().slideDown();
-                    return false;
-                    });
-                });
-        </script>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/main.js"></script>
 
         <!-- Other -->
         <script src="https://use.typekit.net/tvl4lei.js"></script>
@@ -192,10 +56,10 @@
                     <dt><a href="">Vim's Modes</a></dt>
                     <dd>
                         <p>Some people disagree on how many modes Vim actually has. I'm going to define three: insert mode, command mode, and last-line mode. Let's start with the default mode you'll see when you start up Vim--command mode.</p>
-<p>When you run vim <em>filename</em> to edit a file, Vim starts out in command mode. This means that all the alphanumeric keys are bound to commands, rather than inserting those characters. Typing j won't insert the character "j"--it will move the cursor down one line. Typing dd will delete an entire line, rather than inserting "dd."</p>
-<p>To enter the <em>insert</em> mode, type i (for "insert") and now the keys will behave as you'd expect. You can type normally until you want to make a correction, save the file, or perform another operation that's reserved for command mode or last-line mode. To get out of insert mode, hit the Escape key.</p>
-<p>Once you press Escape, you're in command mode again. What if you'd like to save your file or search through your document? No problem, press : and Vim will switch to <em>last-line</em> mode. Vim is now waiting for you to enter a command like :w to write the file or :q to exit the editor.</p>
-<p>If that all sounds complicated, it's really not. It does take a few days to start training your brain to move between the modes and memorizing the most important keys for movement, commands, and so on. But once you start getting the hang of it, you'll be surprised by how fluid it is editing a file in Vim. Let's walk through some of the most common commands that you need to know.</p>
+                        <p>When you run vim <em>filename</em> to edit a file, Vim starts out in command mode. This means that all the alphanumeric keys are bound to commands, rather than inserting those characters. Typing j won't insert the character "j"--it will move the cursor down one line. Typing dd will delete an entire line, rather than inserting "dd."</p>
+                        <p>To enter the <em>insert</em> mode, type i (for "insert") and now the keys will behave as you'd expect. You can type normally until you want to make a correction, save the file, or perform another operation that's reserved for command mode or last-line mode. To get out of insert mode, hit the Escape key.</p>
+                        <p>Once you press Escape, you're in command mode again. What if you'd like to save your file or search through your document? No problem, press : and Vim will switch to <em>last-line</em> mode. Vim is now waiting for you to enter a command like :w to write the file or :q to exit the editor.</p>
+                        <p>If that all sounds complicated, it's really not. It does take a few days to start training your brain to move between the modes and memorizing the most important keys for movement, commands, and so on. But once you start getting the hang of it, you'll be surprised by how fluid it is editing a file in Vim. Let's walk through some of the most common commands that you need to know.</p>
                     </dd>
 
                     <dt><a href="">The Basics of Moving in Vim</a></dt>
