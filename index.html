@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>VIM - Explained</title>
+        <title>VIM - Home</title>
 
         <!-- CSS import -->
         <link rel="stylesheet" type="text/css" href="css/main.css">
@@ -21,23 +21,20 @@
             function select(element)   {
                 clear_selection();
                 element.className = "selected";
+                document.title = "VIM - " + element.innerHTML;
             }
-        </script>
-        <script type="text/javascript">
-            $(document).ready(function(){
 
+            // Adapted from https://codepen.io/cssjockey/pen/jGzuK
+            $(document).ready(function(){
                 $('ul.tabs li').click(function(){
                     var tab_id = $(this).attr('data-tab');
-
                     $('ul.tabs li').removeClass('current');
                     $('.tab-content').removeClass('current');
-
-//                    $(this).addClass('selected');
                     select(this);
                     $("#"+tab_id).addClass('current');
                 })
             })
-            // Adapted from https://codepen.io/cssjockey/pen/jGzuK
+
         </script>
 
         <!-- Other -->
@@ -49,40 +46,39 @@
         <nav>
             <ul class='tabs'>
                 <li class="logo"><img src="images/logo.svg" alt="VIM Logo"></li>
-<!--                Logo By Wikimedia User:D0ktorz (reworked in SVG) [GPL (http://www.gnu.org/licenses/gpl.html)], via Wikimedia Commons-->
-                <li data-tab="tab-1" onclick="select(this)" class="selected">Home</li>
-                <li data-tab="tab-2" onclick="select(this)">News</li>
-                <li data-tab="tab-3" onclick="select(this)">Quiz</li>
-                <li data-tab="tab-4" onclick="select(this)">Contact</li>
+<!--                Logo By Wikimedia - User:D0ktorz (reworked in SVG) [GPL (http://www.gnu.org/licenses/gpl.html)], via Wikimedia Commons-->
+                <li data-tab="tab-1" class="selected">Home</li>
+                <li data-tab="tab-2">Use Vim</li>
+                <li data-tab="tab-3">News</li>
+                <li data-tab="tab-4">Quiz</li>
+                <li data-tab="tab-5">Contact</li>
             </ul>
         </nav>
 
         <div id="content">
 
             <div id="tab-1" class="tab-content current">
-                <p>
-                    Lorem ipsum dolor sit amet.<br />
-                    Lorem ipsum dolor sit amet.<br />
-                    Lorem ipsum dolor sit amet.<br />
-                    Lorem ipsum dolor sit amet.<br />
-                    Lorem ipsum dolor sit amet.<br />
-                    Lorem ipsum dolor sit amet.<br />
-                    Lorem ipsum dolor sit amet.<br />
-                    Lorem ipsum dolor sit amet.1<br />
-                </p>
+                <h1>Vim</h1>
+                <h2>The Programmer's Text Editor</h2>
+<!--                <p>Vim is probably the most basic text editor you'll find in use today. It's highly configrable and comes installed on most UNIX and MacOS systems.</p>-->
+                <table>
+                    <tr>
+                        <td>
+                            <img src="images/vim_mac.png" alt="Vim on MacOS" width="200">
+                        </td>
+                        <td>
+                            <p>
+                                Vim is probably the most basic text editor you'll find in use today. It's highly configrable and comes installed on most UNIX and MacOS systems. Vim is highly regarded and well used by developers because of it's efficiency and configurability.
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+                <h3>What is Vim?</h3>
+                <p>Vim is Vi Improved. Vi is an old plain text editor with minimal features made in 1976. In 1981, a software genius decided that Vi was no longer enough to satisfy developer and sysadmin needs, and so developed an improved version of Vi, named Vi Improved, or Vim for short.<br />Vim is a very popular text editor due to its immense customization options and high performance. Vim also works over SSH connections, so you can create and edit remote files just as you would local ones. It has support for hundreds of development languages and creates small files that keep app sizes small.<br /> It's so popular in fact, that in 2006, Linux Journal readers voted it the most used text editor.</p>
             </div>
 
             <div id="tab-2" class="tab-content">
-                <p>
-                    Lorem ipsum dolor sit amet.<br />
-                    Lorem ipsum dolor sit amet.<br />
-                    Lorem ipsum dolor sit amet.<br />
-                    Lorem ipsum dolor sit amet.<br />
-                    Lorem ipsum dolor sit amet.<br />
-                    Lorem ipsum dolor sit amet.<br />
-                    Lorem ipsum dolor sit amet.<br />
-                    Lorem ipsum dolor sit amet.2<br />
-                </p>
+
             </div>
 
             <div id="tab-3" class="tab-content">
@@ -110,10 +106,23 @@
                     Lorem ipsum dolor sit amet.4<br />
                 </p>
             </div>
+
+            <div id="tab-5" class="tab-content">
+                <p>
+                    Lorem ipsum dolor sit amet.<br />
+                    Lorem ipsum dolor sit amet.<br />
+                    Lorem ipsum dolor sit amet.<br />
+                    Lorem ipsum dolor sit amet.<br />
+                    Lorem ipsum dolor sit amet.<br />
+                    Lorem ipsum dolor sit amet.<br />
+                    Lorem ipsum dolor sit amet.<br />
+                    Lorem ipsum dolor sit amet.4<br />
+                </p>
+            </div>
         </div>
 
         <footer>
-
+            <p>Author: Connor O'Neill &nbsp; | &nbsp; B Code: B00632267 &nbsp; | &nbsp; Contact: <a href="mailto:oneill-c79@email.ulster.ac.uk">oneill-c79@email.ulster.ac.uk</a></p>
         </footer>
     </body>
 </html>
