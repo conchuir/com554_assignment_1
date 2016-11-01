@@ -15,6 +15,7 @@ Due Date:       Wednesday 2nd November
 * News Page (loading xml, generating table data, tooltip)
 * Quiz (form, hide/show elements, inserting into DOM)
 * Use Vim page (accordion)
+
 ---
 
 ## Items to Fix
