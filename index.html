@@ -125,9 +125,7 @@
                 for(i=0; i<resultArr.length; i++) {
                     result += parseInt(resultArr[i].value);
                 }
-//                console.log(result);
                 document.getElementById('results_holder').innerHTML = "<h4>You scored "+result+" out of 5!</h4>"
-//                $('#results_holder').innerHTML = "<h4>You scored "+result+" out of 5!</h4>"
             }
 
             // Humourous alert if certain ansers are selected
@@ -159,7 +157,6 @@
             <div id="home" class="tab-content current">
                 <h1>Vim</h1>
                 <h2>The Programmer's Text Editor</h2>
-<!--                <p>Vim is probably the most basic text editor you'll find in use today. It's highly configrable and comes installed on most UNIX and MacOS systems.</p>-->
                 <table>
                     <tr>
                         <td>
@@ -191,7 +188,6 @@
 
             <div id="quiz" class="tab-content">
                 <form id="quiz">
-
                     <fieldset id="question_1">
                         <h4>What is Vim short for?</h4>
                         <input type="radio" name="question_1" value="0" onclick="show('question_2')">Vimium<br />

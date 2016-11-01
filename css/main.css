@@ -253,11 +253,11 @@ form textarea {
     font-size: 1em;
 }
 
-    form input[type="text"]:focus,
-    form input[type="email"]:focus,
-    form textarea:focus {
-        border-color: #dbdbdb;
-    }
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form textarea:focus {
+    border-color: #dbdbdb;
+}
 
 /* ##### Contact Form Style End #####
 
