@@ -1,0 +1,95 @@
+<rss version="2.0"><channel><title>vim_announce</title>
+<link>https://groups.google.com/d/forum/vim_announce</link>
+<description>Important announcements for Vim, the text editor</description>
+<language>en</language>
+<item><title>Re: Vim 8.0 released!</title>
+<link>https://groups.google.com/d/msg/vim_announce/EKTuhjF3ET0/XchA75LeAwAJ</link>
+<description>Tumbler Terrall wrote: &gt; &gt; Announcing: Vim (Vi IMproved) version 8.0 &gt; &gt; &gt; &gt; &gt; &gt; This the first major Vim release in ten years. There are interesting &gt; &gt; new features, many small improvements and lots of bug fixes. &gt; &gt; Awesome! Thanks for everything! &gt; &gt; Oh, just curious. Are you going</description>
+<guid isPermaLink="true">https://groups.google.com/d/topic/vim_announce/EKTuhjF3ET0</guid>
+<author>
+Bram Moolenaar</author>
+<pubDate>Tue, 13 Sep 2016 19:59:29 UTC</pubDate></item> <item><title>Vim 8.0 released!</title>
+<link>https://groups.google.com/d/msg/vim_announce/EKTuhjF3ET0/cP1JQcZ4AwAJ</link>
+<description>Hello Vim users! Announcing: Vim (Vi IMproved) version 8.0 This the first major Vim release in ten years. There are interesting new features, many small improvements and lots of bug fixes. Among the new features are: - Asynchronous I/O support, channels, JSON - Jobs - Timers -</description>
+<guid isPermaLink="true">https://groups.google.com/d/topic/vim_announce/EKTuhjF3ET0</guid>
+<author>
+Bram Moolenaar</author>
+<pubDate>Mon, 12 Sep 2016 12:53:59 UTC</pubDate></item> <item><title>Vim 7.4y ready for beta testing</title>
+<link>https://groups.google.com/d/msg/vim_announce/IIP6GOYbCLQ/x-YpjPa7AQAJ</link>
+<description>Hello Vim users! Announcing: Vim (Vi IMproved) version 7.4y BETA This is the second BETA release for Vim 8. Same files as 7.4x but with a few more changes. Please report anything that isn&apos;t right. That includes a crash but also a typo in the documentation or a missing file. Once you</description>
+<guid isPermaLink="true">https://groups.google.com/d/topic/vim_announce/IIP6GOYbCLQ</guid>
+<author>
+Bram Moolenaar</author>
+<pubDate>Tue, 06 Sep 2016 21:02:44 UTC</pubDate></item> <item><title>Vimfest Berlin</title>
+<link>https://groups.google.com/d/msg/vim_announce/rPiLPJlfWCE/nvvJwisSAAAJ</link>
+<description>Hello Vim users, If you are interested in meeting Vim users: Vimfest is happening in Berlin Sept. 16-18. The schedule is now available: http://vimfest.org/#agenda I&apos;ll be doing a talk on Saturday. If you plan to join, please register, so they have an idea of how many people to expect. --</description>
+<guid isPermaLink="true">https://groups.google.com/d/topic/vim_announce/rPiLPJlfWCE</guid>
+<author>
+Bram Moolenaar</author>
+<pubDate>Thu, 01 Sep 2016 11:00:00 UTC</pubDate></item> <item><title>Vim 7.4x ready for beta testing</title>
+<link>https://groups.google.com/d/msg/vim_announce/6cKfuVEWhxg/qoDQLIOxAQAJ</link>
+<description>Hello Vim users, Announcing: Vim (Vi IMproved) version 7.4x BETA This is the first BETA release for Vim 8 Please check that the distribution is OK. I haven&apos;t done one for a long time. Report anything that isn&apos;t right. That includes a crash but also a typo in the documentation or a</description>
+<guid isPermaLink="true">https://groups.google.com/d/topic/vim_announce/6cKfuVEWhxg</guid>
+<author>
+Bram Moolenaar</author>
+<pubDate>Sun, 28 Aug 2016 18:48:18 UTC</pubDate></item> <item><title>Re: Vim 8 pre-announcement</title>
+<link>https://groups.google.com/d/msg/vim_announce/T3foH_UCJt8/0w1nYHF_BgAJ</link>
+<description>Skywind3000 wrote: &gt; &gt; Hello Vim users, &gt; &gt; &gt; &gt; Work on Vim 8.0 is coming close to an end. I hope version 8.0 can be &gt; &gt; released in about two weeks. &gt; &gt; &gt; &gt; This is a last chance to modify new features in a way that is not &gt; &gt; backwards compatible. Once 8.0 is out we can&apos;t make changes</description>
+<guid isPermaLink="true">https://groups.google.com/d/topic/vim_announce/T3foH_UCJt8</guid>
+<author>
+Bram Moolenaar</author>
+<pubDate>Wed, 17 Aug 2016 21:18:12 UTC</pubDate></item> <item><title>Vim 8 pre-announcement</title>
+<link>https://groups.google.com/d/msg/vim_announce/T3foH_UCJt8/zuHmXOshBgAJ</link>
+<description>Hello Vim users, Work on Vim 8.0 is coming close to an end. I hope version 8.0 can be released in about two weeks. This is a last chance to modify new features in a way that is not backwards compatible. Once 8.0 is out we can&apos;t make changes that would break plugins. An overview of new</description>
+<guid isPermaLink="true">https://groups.google.com/d/topic/vim_announce/T3foH_UCJt8</guid>
+<author>
+Bram Moolenaar</author>
+<pubDate>Tue, 16 Aug 2016 16:44:23 UTC</pubDate></item> <item><title>Vim charity: visit report</title>
+<link>https://groups.google.com/d/msg/vim_announce/ZenC1QrO75M/brQref5eAAAJ</link>
+<description>Hello Vim users, Vim users are asked to support a project in Uganda, donations for Vim are used to help poor children. I have visited the project to see what is going on there and what they are doing with the money. You can read it here: www.iccf.nl/news.html You can find pictures here:</description>
+<guid isPermaLink="true">https://groups.google.com/d/topic/vim_announce/ZenC1QrO75M</guid>
+<author>
+Bram Moolenaar</author>
+<pubDate>Sat, 07 May 2016 16:20:38 UTC</pubDate></item> <item><title>Vim charity: financial report 2015</title>
+<link>https://groups.google.com/d/msg/vim_announce/1FDE8MpXzb4/1BznLfc4EAAJ</link>
+<description>Hello Vimmers, Vim users are asked to support a project in Uganda, and many have donated money in 2015. The ICCF foundation takes care of this and the financial report is now available, see the attachment. Also available in Dutch: http://www.iccf.nl/jaarrekening2015nl.pdf I am very thankful</description>
+<guid isPermaLink="true">https://groups.google.com/d/topic/vim_announce/1FDE8MpXzb4</guid>
+<author>
+Bram Moolenaar</author>
+<pubDate>Thu, 10 Mar 2016 19:54:05 UTC</pubDate></item> <item><title>Vim calendar for 2016</title>
+<link>https://groups.google.com/d/msg/vim_announce/Dv0lzmn8_-w/JETsVkeMAgAJ</link>
+<description>Hello Vim users, I have updated the handy desktop calendar for 2016. It prints on one sheet of paper and, after folding and applying a bit of glue, stands on your desk. It is available in English and Dutch. You can find the PDF files on my website: http://moolenaar.net/#Calendar If you</description>
+<guid isPermaLink="true">https://groups.google.com/d/topic/vim_announce/Dv0lzmn8_-w</guid>
+<author>
+Bram Moolenaar</author>
+<pubDate>Thu, 17 Dec 2015 21:31:47 UTC</pubDate></item> <item><title>Vim donations</title>
+<link>https://groups.google.com/d/msg/vim_announce/c6qJ2aTmwvA/tix0ZhcGCgAJ</link>
+<description>Hello Vim users, I keep getting a steady stream of donations. I thought you might want to know how much this actually is, so here is an overview of this year so far: 2015 Jan 4806 euro 2015 Feb 1250 euro 2015 Mar 1246 euro 2015 Apr 5153 euro</description>
+<guid isPermaLink="true">https://groups.google.com/d/topic/vim_announce/c6qJ2aTmwvA</guid>
+<author>
+Bram Moolenaar</author>
+<pubDate>Tue, 01 Dec 2015 19:34:35 UTC</pubDate></item> <item><title>Vim has moved from Google Code to Github</title>
+<link>https://groups.google.com/d/msg/vim_announce/JwhLSKf39kM/wYUaqfPuAAAJ</link>
+<description>Hello Vim users, The announced move is done! The cleaned up git repository is available on GitHub. You can start using it, see http://www.vim.org/git.php If you previously had synced from the Mercurial repository on Google Code, you can either just drop it and start using GitHub, or switch</description>
+<guid isPermaLink="true">https://groups.google.com/d/topic/vim_announce/JwhLSKf39kM</guid>
+<author>
+Bram Moolenaar</author>
+<pubDate>Mon, 24 Aug 2015 18:34:14 UTC</pubDate></item> <item><title>Vim is moving from Google Code to Github</title>
+<link>https://groups.google.com/d/msg/vim_announce/kC6yXmx6qJg/1WKQiYl4FwAJ</link>
+<description>Hello Vim users, If you never use the Mercurial repository or deal with issues, you can stop reading now. Google Code is shutting down, the Vim project is being moved to Github. While this is happening, no changes are to be made. Especially, don&apos;t add new issues or edit existing issues.</description>
+<guid isPermaLink="true">https://groups.google.com/d/topic/vim_announce/kC6yXmx6qJg</guid>
+<author>
+Bram Moolenaar</author>
+<pubDate>Tue, 18 Aug 2015 20:12:19 UTC</pubDate></item> <item><title>Vim-multibyte mailing list is closed</title>
+<link>https://groups.google.com/d/msg/vim_announce/3Kzdhtsp9dQ/afcHmpksN7QJ</link>
+<description>Hello Vim users, The number of messages on the vim-multibyte mailing list has gone down to nothing. Multi-byte text is a core part of Vim these days, mainly because UTF-8 is wide spread now. Therefore I have closed the vim-multibyte maillist. The archive will remain, but posting new</description>
+<guid isPermaLink="true">https://groups.google.com/d/topic/vim_announce/3Kzdhtsp9dQ</guid>
+<author>
+Bram Moolenaar</author>
+<pubDate>Fri, 03 Jul 2015 11:50:40 UTC</pubDate></item> <item><title>Vim charity: financial report 2014</title>
+<link>https://groups.google.com/d/msg/vim_announce/2czE8NAWetM/HUASaYWiPSkJ</link>
+<description>Hello Vim users, Vim users are asked to support a project in Uganda, and many have sent money in 2014. The ICCF foundation takes care of this and the financial report is now available: http://www.iccf.nl/jaarrekening2014en.pdf Also available in Dutch: http://www.iccf.nl/jaarrekening2014nl.pdf</description>
+<guid isPermaLink="true">https://groups.google.com/d/topic/vim_announce/2czE8NAWetM</guid>
+<author>
+Bram Moolenaar</author>
+<pubDate>Tue, 17 Feb 2015 15:39:03 UTC</pubDate></item></channel></rss>

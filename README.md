@@ -11,6 +11,8 @@ Due Date:       Wednesday 2nd November
 
 * Menu bar
 * Content tabs and holders
+* Contact form
+* News Page
 
 ---
 
