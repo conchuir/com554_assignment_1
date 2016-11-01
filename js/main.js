@@ -25,6 +25,7 @@ $(document).ready(function(){
     })
 })
 
+// --------------------------------------------------------
 // Specific JS for contact form
 // Validate data is present before sending
 function checkSubmit()   {
@@ -65,6 +66,7 @@ function send() {
     }
 }
 
+// --------------------------------------------------------
 // JS for news feed
 // Populate news table from RSS feed
 $(document).ready(function(){
@@ -86,6 +88,7 @@ $(document).ready(function(){
 });
 
 
+// --------------------------------------------------------
 // JS for quiz
 // Make divs invisible on page load
 $(document).ready(function(){
@@ -116,6 +119,7 @@ function stupidAnswer() {
 }
 
 
+// --------------------------------------------------------
 // JS for Accordian
 // Adapted from https://css-tricks.com/snippets/jquery/simple-jquery-accordion/
 $(document).ready(function($) {
