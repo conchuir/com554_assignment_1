@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>VIM - Home</title>
 
@@ -35,6 +35,48 @@
                 })
             })
 
+        </script>
+        <script type="application/javascript">
+            // Specific JS for contact form
+            // Validate data is present before sending
+            function checkSubmit()   {
+                if (document.getElementById('name').value == null || document.getElementById('name').value == "") {
+                    alert("Name field is required");
+                    return false;
+                }
+                if (document.getElementById('email').value == null || document.getElementById('email').value == "") {
+                    alert("Email field is required");
+                    return false;
+                }
+                if (document.getElementById('subject').value == null || document.getElementById('subject').value == "") {
+                    alert("Subject field is required");
+                    return false;
+                }
+                if (document.getElementById('message').value == null || document.getElementById('message').value == "") {
+                    alert("Message field is required");
+                    return false;
+                }
+                return true;
+            }
+
+            // Submit data (runs checkSubmit first)
+            function send() {
+                if (checkSubmit())  {
+                    var url = "contact.php?";
+                    url += "name=";
+                    url += document.getElementById('name').value;
+                    url += "&email=";
+                    url += document.getElementById('email').value;
+                    url += "&subject=";
+                    url += document.getElementById('subject').value;
+                    url += "&message=";
+                    url += document.getElementById('message').value;
+                    url = url.replace(/ /g, "%20");
+                    url += " #response"
+                    alert(url);
+                    $("#return").load(url);
+                }
+            }
         </script>
 
         <!-- Other -->
@@ -108,16 +150,27 @@
             </div>
 
             <div id="tab-5" class="tab-content">
-                <p>
-                    Lorem ipsum dolor sit amet.<br />
-                    Lorem ipsum dolor sit amet.<br />
-                    Lorem ipsum dolor sit amet.<br />
-                    Lorem ipsum dolor sit amet.<br />
-                    Lorem ipsum dolor sit amet.<br />
-                    Lorem ipsum dolor sit amet.<br />
-                    Lorem ipsum dolor sit amet.<br />
-                    Lorem ipsum dolor sit amet.4<br />
-                </p>
+                <h1>Contact Us</h1>
+                <h2>Thank you for stopping by. Please use the form below to contact us and we'll get back to you as soon as possible.<br /><i>All fields are required</i></h2>
+                <form>
+<!--                   Adapted from Pixelarity template-->
+                    <div class="row 50%">
+                        <input id="name" type="text" name="name" placeholder="Name" />
+                        <input id="email" type="text" name="email" placeholder="Email" />
+                    </div>
+                    <div class="row 50%">
+                        <input id="subject" type="text" name="subject" placeholder="Subject" />
+                    </div>
+                    <div class="row 50%">
+                        <textarea id="message" name="message" placeholder="Message" rows="3"></textarea>
+                    </div>
+                    <div class="row">
+                        <input type="button" class="special" value="Send Message" onclick="send()" />
+                    </div>
+                </form>
+                <div id='return'>
+
+                </div>
             </div>
         </div>
 
